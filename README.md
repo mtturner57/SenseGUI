@@ -13,8 +13,9 @@ https://pip.pypa.io/en/stable/cli/pip_freeze/
 ## Eel for python frontend
 https://pypi.org/project/Eel/
 https://www.geeksforgeeks.org/create-html-user-interface-using-eel-in-python/
-### Old - https://github.com/hrdtbs/template-create-react-app-eel\
+https://github.com/hrdtbs/template-create-react-app-eel\
 
-
-## Sense Hat
+## Sense Hat & Extras
 https://www.raspberrypi.com/documentation/accessories/sense-hat.html
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
+https://stackoverflow.com/questions/63143315/how-to-call-a-function-every-x-seconds-with-updated-state-react
