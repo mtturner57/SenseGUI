@@ -5,17 +5,21 @@ import "./App.css";
 import { eel } from "./eel.js";
 
 function App() {
+  const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
   const [randInt, setRandint] = useState(0);
 
-  eel.set_host("ws://localhost:8888");
-  eel.hello();
+  if (isDevelopment){
+    eel.set_host('ws://localhost:8888');
+  }
 
   useEffect(() => {
     eel.random_python()((x)=>{
       console.log(x);
       setRandint(x);
+      eel.hello();
     });
   }, []);
+  
   return (
       <div className="App">
         <header className="App-header">
