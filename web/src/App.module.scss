@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #0ba1d9;
+  height: 100vh;
+}
+
+.temperature_container {
+  .celcius_container{
+   font-size: 72px; 
+   height: 66vh;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   cursor: default;
+
+   .celcius_temp {
+      z-index: 2;
+      &:after {
+        content: "\00b0 C";
+      }
+    }
+  }
+}
+
+.others_container {
+  font-size: 60px;
+  height: 24vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: default;
+
+  .humidity_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    .humidity {
+      z-index: 2;
+      &:after {
+        content: "%"
+      }
+    }
+  }
+
+  .pressure_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    .pressure {
+      z-index: 2;
+      &:after {
+        content: ' inHG'
+      }
+    }
+  }
+}
+
+.platform{ 
+  width: 400px;
+  height: 80px;
+  background: #033da9;
+  border-radius: 63%;
+  position: absolute;
+  margin-top: 55px;
+  z-index: 1;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

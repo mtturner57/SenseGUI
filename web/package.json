@@ -6,13 +6,14 @@
     "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.74.1"
   },
   "scripts": {
     "start:js": "cross-env BROWSER=none react-scripts start",
     "build:js": "react-scripts build",
     "start:eel": "python index.py --develop",
-    "build:eel": "python prebuild.py && python -m eel index.py build --onefile --noconsole  --name react-eel-app",
+    "build:eel": "python prebuild.py && python -m eel index.py build --onefile --noconsole --name react-eel-app",
     "clean:build": "rm -rf build dist",
     "start": "npm-run-all -p start:*",
     "build": "npm-run-all clean:build build:*",
