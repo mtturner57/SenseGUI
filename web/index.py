@@ -2,6 +2,7 @@
 import eel
 import sys
 from random import randint
+#from sense_hat import SenseHat
 
 #init Sense Hat 
 # sense = SenseHat()
